@@ -1,3 +1,6 @@
+import pp from '../../image/pp.jpg'
+
+
 const UserSalaryInfo = () => {
     return (
         <>
@@ -8,42 +11,55 @@ const UserSalaryInfo = () => {
                     <input className="border focus:outline-none" type="number" id="userId" />
                     <button className="px-4 py-1 bg-orange-500 text-white hover:bg-orange-600">Search</button>
                 </div>
-                <div className="w-full bg-violet-900 bg-opacity-20 mt-20 p-10 rounded-lg">
-                    <div className="grid grid-cols-5 w-full border border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="userId">ID :</label>
-                        <span className="col-span-4 px-4 py-2" id="userId">101</span>
+                <div className="w-full bg-violet-900 bg-opacity-20 mt-20 p-10 rounded-lg grid grid-cols-3 gap-2">
+                    <div className="col-span-2">
+                        <div className="grid grid-cols-5 w-full border border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="userId">ID :</label>
+                            <span className="col-span-4 px-4 py-2" id="userId">101</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="userName">Name</label>
+                            <span className="col-span-4 px-4 py-2" id="userName">Md Pavel Hossain</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="deg">Degsicnation</label>
+                            <span className="col-span-4 px-4 py-2" id="deg">Assistant Teacher</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="joiningDate">Joining Date</label>
+                            <span className="col-span-4 px-4 py-2" id="joiningDate">15/05/2024</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="netSalary">Net Salary</label>
+                            <span className="col-span-4 px-4 py-2" id="netSalary">TK 15000</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="absant">Absant</label>
+                            <span className="col-span-4 px-4 py-2" id="absant">10 Days</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="late">Late</label>
+                            <span className="col-span-4 px-4 py-2" id="late">8 Days</span>
+                        </div>
+                        <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
+                            <label className="col-span-1 px-4 py-2" htmlFor="paidAmount">Paid Amount</label>
+                            <span className="col-span-4 px-4 py-2" id="paidAmount">TK 12580</span>
+                        </div>
+                        <div className="my-4 flex flex-row gap-4 ">
+                            <button className="px-8 py-1 bg-green-500 text-lg text-white font-roboto hover:bg-green-700">Print</button>
+                            <button className="px-8 py-1 bg-orange-500 text-lg text-white font-roboto hover:bg-orange-700">Save</button>
+                        </div>
                     </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="userName">Name</label>
-                        <span className="col-span-4 px-4 py-2" id="userName">Md Pavel Hossain</span>
-                    </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="deg">Degsicnation</label>
-                        <span className="col-span-4 px-4 py-2" id="deg">Assistant Teacher</span>
-                    </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="joiningDate">Joining Date</label>
-                        <span className="col-span-4 px-4 py-2" id="joiningDate">15/05/2024</span>
-                    </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="netSalary">Net Salary</label>
-                        <span className="col-span-4 px-4 py-2" id="netSalary">TK 15000</span>
-                    </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="absant">Absant</label>
-                        <span className="col-span-4 px-4 py-2" id="absant">10 Days</span>
-                    </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="late">Late</label>
-                        <span className="col-span-4 px-4 py-2" id="late">8 Days</span>
-                    </div>
-                    <div className="grid grid-cols-5 w-full border border-t-0 border-black text-xl font-roboto divide-x-[1px] divide-zinc-700">
-                        <label className="col-span-1 px-4 py-2" htmlFor="paidAmount">Paid Amount</label>
-                        <span className="col-span-4 px-4 py-2" id="paidAmount">TK 12580</span>
-                    </div>
-                    <div className="my-4 flex flex-row gap-4 ">
-                        <button className="px-8 py-1 bg-green-500 text-lg text-white font-roboto hover:bg-green-700">Print</button>
-                        <button className="px-8 py-1 bg-orange-500 text-lg text-white font-roboto hover:bg-orange-700">Save</button>
+                    <div className="col-span-1  border-[1px] border-black grid grid-rows-6">
+                        <div className="row-span-5 border-b-[1px] border-black">
+                            <img src={pp} alt="" />
+                        </div>
+                        <div className="row-span-1 flex flex-row items-center justify-center gap-8">
+                            <span className="font-roboto font-semibold text-green-800">Signeture</span>
+                            <div className="w-60 h-14 bg-white">
+                                <h2></h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
