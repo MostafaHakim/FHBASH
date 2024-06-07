@@ -1,9 +1,14 @@
+import Header from "./components/Header"
+
+
 
 
 function App() {
   return (
     <>
-      <h1>This is my school accounts app</h1>
+      <div className="mainBg w-full h-screen flex flex-col items-center justify-start">
+        <Header />
+      </div>
     </>
   )
 }
