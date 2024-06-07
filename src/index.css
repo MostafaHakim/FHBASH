@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 .mainBg {
-    background-image: url('./background/bg.jpg');
+    background-image: url('./background/bg.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
